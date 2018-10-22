@@ -2,7 +2,7 @@
 curl localhost:8080/alter -XPOST -d $'
   book_guid: string @index(exact) .
   book_doi: string @index(exact) .
-  book_title: string @index(term) .
+  book_title: string @index(term,trigram, fulltext) .
   book_publication_date: datetime @index(day) .
 
   person_orcid: string @index(exact) .

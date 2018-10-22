@@ -112,7 +112,7 @@ curl localhost:8080/mutate -H "X-Dgraph-CommitNow: true" -XPOST -d $'
    #Books
    _:b1 <book_guid> "db44f821-e253-42ae-9bfd-64a256b9cdca" .
    _:b1 <book_doi> "10.1109/5.1" .
-   _:b1 <book_title> "Book 1" .
+   _:b1 <book_title> "Book 1 - The quick" .
    _:b1 <book_publication_date> "1977-05-25" .
    _:b1ch1 <cpt_title> "Book 1 Chapter 1" .
    _:b1ch2 <cpt_title> "Book 1 Chapter 2" .
@@ -125,7 +125,7 @@ curl localhost:8080/mutate -H "X-Dgraph-CommitNow: true" -XPOST -d $'
    # book 2
    _:b2 <book_guid> "bcb19b91-4477-493d-b125-2bcfcc7d0e85" .
    _:b2 <book_doi> "10.1109/5.2" .
-   _:b2 <book_title> "Book 2" .
+   _:b2 <book_title> "Book 2 - The quick brown fox" .
    _:b2 <book_publication_date> "2018-01-01" .
    _:b2ch1 <cpt_title> "Book 2 Chapter 1" .
    _:b2ch2 <cpt_title> "Book 2 Chapter 2" .
@@ -142,7 +142,7 @@ curl localhost:8080/mutate -H "X-Dgraph-CommitNow: true" -XPOST -d $'
    # book 3
    _:b3 <book_guid> "bcb19b91-4477-493d-b125-2bcfcc7d0e83" .
    _:b3 <book_doi> "10.1109/5.3" .
-   _:b3 <book_title> "Book 3" .
+   _:b3 <book_title> "Book 3 - The quick brown fox jumped over the lazy dog" .
    _:b3 <book_publication_date> "2015-03-03" .
    _:b3ch1 <cpt_title> "Book 3 Chapter 1" .
    _:b3ch2 <cpt_title> "Book 3 Chapter 2" .
